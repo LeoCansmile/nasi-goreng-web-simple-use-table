@@ -1,0 +1,164 @@
+<!--  Membuat layout menggunakan table -->
+<!DOCTYPE html>
+<html lang="in_ID">
+    <head>
+        <meta charset="utf-8">
+        <meta name="title" content="Nasi Goreng">
+        <meta name="description" content="Membuat layout web menggunakan tabel">
+        <meta name="author" content="AnonimUser">
+        <meta name="keywords" content="Html, Css, table, Layoutdesign">
+        <meta name="theme-color" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,  maximum-scale=5.0,  user-scalable=yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <style type="text/css">
+            *, html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #F8F0E5;
+                font-size: 2vh;
+                font-family: monospace;
+            }
+            
+            .hd-jdl {
+                display: table;
+                border-collapse: collapse;
+                width: 100%;
+                height: 100%;
+                background-color: #EADBC8;
+            }
+
+            .hd-jdl .hd-jdl-content h2 {
+                padding: 40px;
+            }
+
+            .hd-jdl  tr td.obj-fhoto {
+                width: 50%
+            }
+
+            .hd-jdl tr td.obj-fhoto figure img[src="nasigoreng.png"] {
+                margin: 0 auto;
+                display: block;
+                width: 55%;
+            }
+
+            .hd-jdl tr td.obj-fhoto figure figcaption, a {
+                font-style: italic;
+                font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 18px;
+                text-align: center;
+                transform: translate(-5px, -70px);
+            }
+
+            .hd-jdl tr td.obj-fhoto figure figcaption a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+            .hd-jdl tr td {
+                box-shadow: rgba(248, 240, 229, .6) 0px 1px 5px;
+            }
+
+            .hd-jdl tr td.artic1, .hd-jdl tr td.artic2 {
+                padding-left: 2%;
+            }
+
+            .hd-jdl tr td.artic1  ul.cook{
+                list-style: "\2714 " inside;
+            }
+
+            .hd-jdl tr .artic2 .bahan {
+                list-style: disc inside;
+                padding-bottom: 2%;
+            }
+
+            .footr {
+                text-align: center;
+                padding-bottom: 6%;
+            }
+
+            .footr #footrwrite{
+                margin-top:  5%;
+            }
+
+            .footr #footrwrite span {
+                color: red;
+            }
+
+            /*  Resfonsive for mobile web Android */
+            @media screen and (max-width: 512px) {
+                .hd-jdl .hd-jdl-content h2 {
+                    font-size: 2.4vh;
+                }
+
+                .hd-jdl tr td.obj-fhoto {
+                    width: 100%;
+                }
+
+                .hd-jdl tr td.obj-fhoto figure figcaption, a {
+                    transform: translate(0px, -20px);
+                    font-size: 12px;
+                }
+
+                .hd-jdl tr td {
+                    display: block; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table class="hd-jdl">
+                <tr>
+                    <th colspan="4"class="hd-jdl-content">
+                        <h2>Resep Nasi Goreng Enak Tapi Bikin Kenyang</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2"class="obj-fhoto">
+                        <figure>
+                            <img src="nasigoreng.png"alt="Nasi-Goreng"title='Nasi Goreng Enak & Lezat'>
+                            <figcaption>Copyright by <a href="https://www.deviantart.com/zizihaha/art/Nasi-Goreng-879024937"alt="Nasi-Goreng"title="Link Ke DeviantArt by zizihaha"target="_blank">DeviantArt</a></figcaption>
+                        </figure>
+                    </td>
+                    <td class="artic1"colspan="2">
+                        <p>Cara Memasak: </p>
+                        <ul class="cook">
+                            <li> Panaskan mentega tumis bawang merah dan bawang putih sampai berbau harum. </li>
+                                <li>terasi, cabai rawit, dan cabai merah kedala</li>
+                            <li>Tambahkan telur dan daun bawang dan jangan lupa  masukkan nasi, merica, garam,  kaldu bubuk, gula pasir dan penyedap rasa .aduk sampai merata hingga matang  dan bumbunya meresap </li>
+                            <li> setelah matang nasi  goreng siap di sajikan bersama keluarga</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="artic2"colspan="4">
+                        <h3>Bahan :</h3>
+                        <ul class="bahan">
+                            <li>2 sdm mentega tawar</li>
+                            <li>10 g bawang merah, iris tipis</li>
+                            <li>5 g bawang putih, iris tipis</li>
+                            <li>15 g terasi</li>
+                            <li>3 buah cabai rawit, iris halus</li>
+                            <li>10 buah cabai merah, iris halus</li>
+                            <li>1 butir telur, kocok sebentar</li>
+                            <li>10 g irisan daun bawang</li>
+                            <li>250 g  nasi putih</li>
+                            <li>1/4 sdt merica bubuk</li>
+                            <li>1/4 sdt garam</li>
+                            <li>1/2 kaldu bubuk instan rasa ayam</li>
+                            <li>1/4 sdt gula pasir</li>
+                            <li>1/4 sdt penyedap rasa (opsional)</li>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footr"colspan="4">
+                        <p id="footrwrite">Make with <span>&#10084; </span>behaviour</p>    
+                    </td>
+                </tr>
+        </table>
+    </body>
+</html>
