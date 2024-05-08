@@ -67,8 +67,13 @@
                 padding-left: 2%;
             }
 
-            .hd-jdl tr td.artic1  ul.cook{
-                list-style: "\2714 " inside;
+            .hd-jdl tr td.artic1 ul.cook {
+                list-style-position: inside;
+            }
+
+            .hd-jdl tr td.artic1 ul.cook::before {
+                content: "\2714 ";
+                color: #074173;
             }
 
             .hd-jdl tr .artic2 .bahan {
